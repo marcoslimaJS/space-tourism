@@ -1,0 +1,56 @@
+/*CORES*/
+:root {
+  --cor-primaria: #0B0D17;
+  --cor-secundaria: #979797;
+  --cor-terciaria: #D0D6F9;
+  --cor-quaternaria: #FFFFFF;
+}
+
+.cor-primaria {
+  color: var(--cor-primaria)
+}
+.cor-secundaria {
+  color: var(--cor-secundaria)
+}
+.cor-terciaria {
+  color: var(--cor-terciaria)
+}
+
+/*FONTES*/
+
+.font-h1 {
+  font: 400 150px/172px 'Bellefair', serif;
+}
+.font-h2 {
+  font: 400 100px/115px 'Bellefair', serif;
+}
+.font-h3 {
+  font: 400 56px/64px 'Bellefair', serif;
+  text-transform: uppercase;
+}
+.font-h4 {
+  font: 400 32px/37px 'Bellefair', serif;
+  text-transform: uppercase;
+}
+.font-h5 {
+  font: 400 28px/34px 'Barlow Condensed', sans-serif;
+  letter-spacing: 4.725px;
+}
+
+
+.font-sb-h1 {
+  font: 400 28px/32px 'Bellefair', serif;
+  text-transform: uppercase;
+}
+.font-sb-h2 {
+  font: 400 14px/17px 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+}
+.font-nav-text {
+  font: 400 16px/19px 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.7px;
+}
+.font-body-text {
+  font: 400 18px/32px 'Barlow', sans-serif;
+}

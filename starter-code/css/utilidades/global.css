@@ -1,0 +1,38 @@
+/*CSS RESETS*/
+
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-primaria);
+  color: var(--cor-quaternaria);
+  font: 400 18px/32px 'Barlow', sans-serif;
+  padding: 80px;
+}
+
+
+
+
+
+/*componentes*/
+
+.btn-main {
+  background-color: var(--cor-quaternaria);
+  color: var(--cor-primaria);
+  display: inline-flex;
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.btn-main:hover {
+  /*border: 76px solid #979797;*/
+  box-shadow: 0 0 0 100px #979797;
+}
