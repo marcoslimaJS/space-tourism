@@ -1,0 +1,172 @@
+#crew {
+  background: url('../../assets/crew/background-crew-desktop.jpg');
+  background-size: 100% 100%;
+}
+
+#crew .header {
+  margin-bottom: 42px;
+}
+
+.crew {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 80px;
+  justify-content: center;
+  padding: 0 165px 0 137px;
+}
+
+.crew-conteudo {
+  display: grid;
+}
+
+.crew-meet {
+  grid-column:  1 / -1;
+  position: relative;
+  top: 30px;
+}
+
+.crew-meet span {
+  margin-right: 24px;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.crew-official {
+  display: grid;
+  align-content: center;
+  align-self: center;
+}
+
+.crew-role {
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-top: 140px;
+  margin-bottom: 15px;
+}
+
+.crew-name {
+  margin-bottom: 27px;
+}
+
+.crew-descricao {
+  max-width: 444px;
+  margin-bottom: 80px;
+}
+
+.crew-lista {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.crew-lista li { 
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.17;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.crew-lista li:hover {
+  opacity: 0.5;
+}
+
+
+@media (max-width: 1400px) {
+  .crew-img img {
+    height: 100%;
+  }
+  .crew-img {
+    height: 100%;
+  }
+}
+
+@media(max-width: 1090px) {
+  #crew {
+    background: url('../../assets/crew/background-crew-tablet.jpg');
+    background-size: 100% 100%;
+  }
+  .crew {
+    grid-template-columns: 1fr;
+    padding: 0 38px;
+    gap: 40px;
+  }
+  .crew-meet {
+    margin-bottom: 60px;
+  }
+  .crew-official {
+    display: grid;
+    justify-content: center;
+  }
+  .crew-role, .crew-name, .crew-descricao {
+    text-align: center;
+  }
+  .crew-role {
+    margin-bottom: 8px;
+    margin-top: 0px;
+  }
+  .crew-name {
+    margin-bottom: 16px;
+  }
+  .crew-descricao {
+    margin-bottom: 40px;
+    max-width: 458px;
+  }
+  .crew-lista {
+    justify-content: center;
+  }
+  .crew-people {
+    display: flex;
+    justify-content: center;
+  }
+  .crew-img {
+    max-width: 456px;
+  }
+}
+
+
+@media(max-width: 390px) {
+  .header {
+    display: none;
+  }
+  .crew {
+    gap: 0px;
+    padding: 0 24px;
+  }
+  .crew-img {
+    max-width: 180px;
+  }
+  .crew-people {
+    grid-row: 2;
+    padding-top: 20px;
+    border-bottom: 2px solid #383B4B;
+  }
+  .crew-meet {
+    grid-row: 1;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .crew-role {
+    margin-top: 0px;
+  }
+  .crew-name {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .crew-descricao {
+    margin-bottom: 100px;
+  }
+  .crew-lista {
+    grid-row: 1;
+  }
+  .crew-lista li {
+    width: 10px;
+    height: 10px;
+  }
+  .crew-people {
+    margin-bottom: 32px;
+  }
+}

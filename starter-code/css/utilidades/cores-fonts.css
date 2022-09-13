@@ -15,14 +15,19 @@
 .cor-terciaria {
   color: var(--cor-terciaria)
 }
+.cor-quaternaria {
+  color:  var(--cor-quaternaria);
+}
 
 /*FONTES*/
 
 .font-h1 {
   font: 400 150px/172px 'Bellefair', serif;
+  text-transform: uppercase;
 }
 .font-h2 {
   font: 400 100px/115px 'Bellefair', serif;
+  text-transform: uppercase;
 }
 .font-h3 {
   font: 400 56px/64px 'Bellefair', serif;
@@ -35,6 +40,7 @@
 .font-h5 {
   font: 400 28px/34px 'Barlow Condensed', sans-serif;
   letter-spacing: 4.725px;
+  text-transform: uppercase;
 }
 
 
@@ -50,7 +56,59 @@
 .font-nav-text {
   font: 400 16px/19px 'Barlow Condensed', sans-serif;
   letter-spacing: 2.7px;
+  text-transform: uppercase;
 }
 .font-body-text {
   font: 400 18px/32px 'Barlow', sans-serif;
 }
+
+@media(max-width: 900px) {
+  .font-h1 {
+    font-size: 150px;
+    line-height: 150px;
+  }
+  .font-h2 {
+    font-size: 80px;
+    line-height: 92px;
+  }
+  .font-h3 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .font-h4 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .font-h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 390px) {
+  .font-nav-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .font-h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .font-h2 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .font-h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .font-h4 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .font-h5 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+

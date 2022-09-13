@@ -1,2 +1,9 @@
 @import '../css/utilidades/cores-fonts.css';
-@import '../css/utilidades/global.css';
+@import '../css/global/global.css';
+@import '../css/global/header.css';
+
+@import '../css/home.css';
+
+@import '../css/pages/destination.css';
+@import '../css/pages/crew.css';
+@import '../css/pages/technology.css';

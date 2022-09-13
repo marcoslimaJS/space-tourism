@@ -1,0 +1,62 @@
+#home {
+  background: url('../assets/home/background-home-desktop.jpg');
+}
+#home header {
+  margin-bottom: 120px;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  justify-content: center;
+  padding: 0 165px;
+  margin-bottom: 130px;
+}
+
+.home-conteudo {
+  justify-self: end;
+  display: grid;
+  gap: 24px;
+}
+
+.home-explore {
+  justify-self: end;
+  align-self: end;
+}
+
+@media(max-width: 1100px) {
+  #home {
+    background: url('../assets/home/background-home-tablet.jpg') no-repeat;
+    background-size: 100% 100%;
+  }
+  .home-container {
+    grid-template-columns: 1fr;
+  }
+  .home-conteudo {
+    justify-self: center;
+  }
+  .home-conteudo h5, .home-conteudo h1, .home-conteudo p {
+    text-align: center;
+  }
+  .home-explore {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-conteudo h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .home-container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  #home {
+    background: url('../assets/home/background-home-mobile.jpg') no-repeat;
+    background-size: 100% 100%;
+  }
+}

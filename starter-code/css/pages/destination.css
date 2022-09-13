@@ -1,0 +1,151 @@
+#destination {
+  background: url('../../assets/destination/background-destination-desktop.jpg');
+}
+
+.destination {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  justify-content: center;
+  padding: 0 165px;
+  margin-bottom: 112px;
+}
+
+.destination-pick {
+  margin-bottom: 97px;
+}
+.destination-pick span {
+  margin-right: 28px;
+}
+
+.destination-conteudo {
+  align-self: end;
+  justify-self: center;
+}
+
+.destination-lista {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 32px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.destination-lista li:first-child {
+  color: var(--cor-quaternaria);
+}
+
+.destination-lista li::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 3px;
+  background: currentColor;
+  position: relative;
+  bottom: -12px;
+  transition: 0.3s;
+}
+.destination-lista li:hover::after {
+  width: 100%;
+}
+.destination-lista .planeta-ativo::after {
+  width: 100%;
+}
+
+.planeta-titulo {
+  margin-bottom: 14px;
+}
+
+.planeta-descricao {
+  padding-bottom: 54px;
+  margin-bottom: 28px;
+  max-width: 444px;
+}
+.planeta-descricao::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #383B4B;
+  position: relative;
+  bottom: -54px;
+}
+
+.destination-dados {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.destination-dados p {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 900px) {
+  #destination {
+    background: url('../../assets/destination/background-destination-tablet.jpg');
+    background-size: 100% 100%;
+  }
+  .destination {
+    grid-template-columns: 1fr;
+    padding: 0 38px;
+    gap: 54px;
+  }
+  .destination-img {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .destination-lista {
+    justify-content: center;
+  }
+  .planeta-titulo {
+    text-align: center;
+  }
+  .planeta-descricao {
+    max-width: 70ch;
+    padding: 0 40px;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .destination-dados {
+    justify-items: center;
+  }
+}
+
+@media (max-width: 390px) {
+  #destination {
+    background: url('../../assets/destination/background-destination-mobile.jpg');
+    background-size: 100% 100%;
+  }
+  .destination-img {
+    max-width: 170px;
+  }
+  .planeta-descricao {
+    padding: 0px;
+  }
+  .destination-dados {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .planeta-distancia{
+    text-align: center;
+  }
+  .planeta-tempo {
+    text-align: center;
+  }
+}
+
+/*
+.planeta-active {
+  position: relative;
+}
+
+.planeta-active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--cor-quaternaria);
+  position: relative;
+  bottom: -15px;
+  z-index: 1;
+} */
