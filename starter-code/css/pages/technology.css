@@ -67,6 +67,11 @@
   border-color: var(--cor-quaternaria);
 }
 
+.technology-lista .foguete-ativo {
+  background: #FFFFFF;
+  color: var(--cor-primaria);
+}
+
 .technology-img {
   display: grid;
   justify-items: end;

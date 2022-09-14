@@ -20,10 +20,11 @@
   <header>
     <div class="header">
       <div class="logo">
-        <a href="../../index.html"><img src="../../assets/shared/logo.svg" alt=""></a>
+        <a href="../index.html"><img src="../assets/shared/logo.svg" alt=""></a>
       </div>
       <nav class="menu">
-        <ul>
+        <button id="btn-mobile"><img src="../assets/shared/icon-hamburger.svg" alt=""></button>
+        <ul id="menu-lista">
           <li><a href="../index.html"><span class="menu-num">00</span> Home</a></li>
           <li><a href="./destination.html"><span class="menu-num">01</span> Destination</a></li>
           <li><a href="./crew.html"><span class="menu-num">02</span> Crew</a></li>
@@ -41,9 +42,9 @@
           <div class="technology-numbers">
             <nav>
               <ul class="technology-lista font-h4">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
+                <li id="launch vehicle" class="foguete-ativo">1</li>
+                <li id="spaceport">2</li>
+                <li id="space capsule">3</li>
               </ul>
             </nav>
           </div>
@@ -67,5 +68,7 @@
     </div>
   </main>
 
+  <script type="module" src="../script/technology.js"></script>
+  <script src="../script/index.js"></script>
 </body>
 </html>

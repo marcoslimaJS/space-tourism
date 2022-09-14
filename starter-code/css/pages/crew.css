@@ -74,6 +74,10 @@
   opacity: 0.5;
 }
 
+.crew-lista .crew-ativo {
+  opacity: 1;
+}
+
 
 @media (max-width: 1400px) {
   .crew-img img {
@@ -129,9 +133,6 @@
 
 
 @media(max-width: 390px) {
-  .header {
-    display: none;
-  }
   .crew {
     gap: 0px;
     padding: 0 24px;

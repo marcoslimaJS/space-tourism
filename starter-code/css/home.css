@@ -51,6 +51,8 @@
   }
   .home-container {
     padding: 0 30px;
+    margin-bottom: 48px;
+    gap: 60px;
   }
 }
 
