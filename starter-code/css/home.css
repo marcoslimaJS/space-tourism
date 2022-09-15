@@ -33,6 +33,7 @@
   #home {
     background: url('../assets/home/background-home-tablet.jpg') no-repeat;
     background-size: 100%;
+    height: 100%;
   }
   #home .header {
     margin-bottom: 100px;
@@ -51,13 +52,25 @@
   }
 }
 
-@media (max-width: 600px) {
+@media(max-width: 850px) {
+  #home {
+    background: url('../assets/home/background-home-mobile.jpg') no-repeat;
+    background-size: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  #home {
+    background: url('../assets/home/background-home-tablet.jpg') no-repeat;
+   
+  }
   #home header {
     margin-bottom: 80px;
   }
   .home-container {
     padding: 0 30px;
-    margin-bottom: 48px;
+    margin-bottom: 100px;
     gap: 80px;
   }
   .home-conteudo {
@@ -72,7 +85,8 @@
 
 @media (max-width: 375px) {
   #home {
-    background: url('../assets/home/background-home-mobile.jpg') no-repeat;
-    background-size: 100vh 100vh;
+    background: url('../assets/home/background-home-tablet.jpg') no-repeat;
+    
+    height: 100%;
   }
 }
