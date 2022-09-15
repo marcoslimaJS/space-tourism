@@ -6,23 +6,26 @@ const fogueteLista = Array.from(tecnologiaLista)
 
 const fogueteNome = document.querySelector('.technology-name');
 const fogueteDescricao = document.querySelector('.technology-descricao');
-const fogueteImg = document.querySelector('.technology-img img');
+const fogueteImgDesktop = document.querySelector('.img-desktop');
+const fogueteImgMobile = document.querySelector('.img-mobile');
 
 
 let tecnologiaNome = '';
 let tecnologiaDescricao = '';
-let tecnologiaImg = ''
+let tecnologiaImgDesktop = '';
+let technologiaImgMobile = ''
 
 function alterarLista() {
   fogueteLista.forEach((foguete, index) => {
     foguete.addEventListener('click', () => {
-      console.log('teste')
       for (let i = 0; i < tecnologia.length; i++) {
         if(foguete.id == tecnologia[i].name.toLowerCase()){
           tecnologiaNome = tecnologia[i].name;
           tecnologiaDescricao = tecnologia[i].description;
-          tecnologiaImg = tecnologia[i].images.portrait;
-          inserindoCrew(tecnologiaNome, tecnologiaDescricao, tecnologiaImg);
+          tecnologiaImgDesktop = tecnologia[i].images.portrait;
+          technologiaImgMobile = tecnologia[i].images.landscape;
+
+          inserindoCrew(tecnologiaNome, tecnologiaDescricao, tecnologiaImgDesktop, technologiaImgMobile);
         }
       } 
       resetAtivo();
@@ -33,10 +36,11 @@ function alterarLista() {
 
 alterarLista()
 
-function inserindoCrew(nome, descricao, img) {
+function inserindoCrew(nome, descricao, imgDesktop, imgMobile) {
   fogueteNome.textContent = nome;
   fogueteDescricao.textContent = descricao;
-  fogueteImg.setAttribute('src', img)
+  fogueteImgDesktop.setAttribute('src', imgDesktop);
+  fogueteImgMobile.setAttribute('src', imgMobile);
 }
 
 function resetAtivo() {

@@ -18,16 +18,13 @@ let crewImg = ''
 function alterarLista() {
   tripulacao.forEach((element, index) => {
     element.addEventListener('click', () => {
-      console.log(element)
       for (let i = 0; i < crews.length; i++) {
         if(element.id == crews[i].name.toLowerCase()){
           crewNome = crews[i].name;
-          console.log()
           crewBio = crews[i].bio;
           crewRole = crews[i].role;
           crewImg = crews[i].images.png;
           inserindoCrew(crewNome, crewRole, crewBio, crewImg);
-          console.log(crewNome)
         }
       } 
       resetAtivo();
@@ -40,7 +37,6 @@ alterarLista()
 
 function inserindoCrew(nome, role, bio, img) {
   oficialNome.textContent = nome;
-  console.log(role)
   oficialRole.textContent = role;
   oficialBio.textContent = bio;
   oficialImg.setAttribute('src', img)

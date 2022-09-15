@@ -5,10 +5,9 @@
   align-items: center;
   padding-top: 40px;
   padding-left: 55px;
-}
-
-.logo {
-  margin-bottom: 76px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu {
@@ -38,11 +37,11 @@
   width: 0%;
   background: var(--cor-terciaria);
   position: absolute;
-  bottom: -27px;
+  bottom: -32px;
   transition: 0.3s;
 }
 
-.menu li a:hover::after {
+.menu li a:hover::after, #menu-lista li a.ativo::after {
   width: 100%;
 }
 
@@ -79,6 +78,9 @@
   .menu li a::after {
     bottom: -35px;
   }
+  .menu li a::after {
+    bottom: -24px;
+  }
 }
 
 @media(max-width:660px) {
@@ -94,6 +96,7 @@
   .menu {
     background: none;
     padding: 32px 26px 32px 32px;
+    height: 72px;
   }
   #menu-lista {
     display: none;
