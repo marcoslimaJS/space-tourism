@@ -14,6 +14,20 @@
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.5485px);
   padding: 30px 165px 30px 125px;
+  position: relative;
+}
+
+.menu::before {
+  content: '';
+  display: inline-block;
+  width: 400px;
+  height: 1px;
+  position: absolute;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  left: -360px;
+  bottom: 49px;
 }
 
 .menu ul {
@@ -56,6 +70,23 @@
   border: none;
 }
 
+@media(max-width: 1400px) {
+  .menu::before {
+    width: 350px;
+    left: -300px;
+  }
+}
+@media(max-width: 1270px) {
+  .menu::before {
+    width: 250px;
+    left: -200px;
+  }
+}
+@media(max-width: 1170px) {
+  .menu::before {
+    display: none;
+  }
+}
 
 @media(max-width: 1050px) {
   .header {
