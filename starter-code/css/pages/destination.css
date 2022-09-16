@@ -34,11 +34,18 @@
   display: flex;
   gap: 35px;
   margin-bottom: 32px;
-  color: rgba(255, 255, 255, 0.5);
 }
 
-.destination-lista li:first-child {
+.destination-lista li {
+  cursor: pointer;
+}
+
+.destination-lista li:first-child a {
   color: var(--cor-quaternaria);
+}
+
+.destination-lista li a {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .destination-lista li::after {

@@ -69,14 +69,22 @@
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 50%;
   mix-blend-mode: normal;
+  cursor: pointer;
 }
 
 .technology-lista li:hover {
   border-color: var(--cor-quaternaria);
 }
 
+.technology-lista li a {
+  color: var(--cor-quaternaria);
+}
+
 .technology-lista .foguete-ativo {
   background: #FFFFFF;
+}
+
+.technology-lista .foguete-ativo a {
   color: var(--cor-primaria);
 }
 

@@ -18,8 +18,8 @@ let destinoImg = ''
 
 function alterarLista() {
   planetas.forEach((planeta, index) => {
-    planeta.addEventListener('click', () => {
-
+    planeta.addEventListener('click', (e) => {
+      e.preventDefault();
       for (let i = 0; i < destinations.length; i++) {
         if(planeta.id == destinations[i].name.toLowerCase()){
           destinoNome = destinations[i].name;
@@ -43,17 +43,17 @@ function inserindoPlaneta(nome, descricao, distancia, tempo, img) {
   planetaDescricao.textContent = descricao;
   planetaDistancia.textContent = distancia;
   planetaTempo.textContent = tempo;
-  planetaImg.setAttribute('src', img)
+  planetaImg.setAttribute('src', img);
 }
 
 function resetAtivo() {
   planetas.forEach((planeta) => {
-    planeta.style.color = 'rgba(255, 255, 255, 0.5)'
-    planeta.classList.remove('planeta-ativo')
+    planeta.firstChild.style.color = 'rgba(255, 255, 255, 0.5)';
+    planeta.classList.remove('planeta-ativo');
   })
 }
 
 function planetaAtivo (planeta) {
-  planeta.classList.add('planeta-ativo')
-  planeta.style.color = "#FFFFFF"
+  planeta.classList.add('planeta-ativo');
+  planeta.firstChild.style.color = "#FFFFFF";
 }

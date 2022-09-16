@@ -17,7 +17,8 @@ let technologiaImgMobile = ''
 
 function alterarLista() {
   fogueteLista.forEach((foguete, index) => {
-    foguete.addEventListener('click', () => {
+    foguete.addEventListener('click', (e) => {
+      e.preventDefault();
       for (let i = 0; i < tecnologia.length; i++) {
         if(foguete.id == tecnologia[i].name.toLowerCase()){
           tecnologiaNome = tecnologia[i].name;
