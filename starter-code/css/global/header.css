@@ -70,6 +70,13 @@
   border: none;
 }
 
+@keyframes menuMobile {
+  0% {width: 0%;}
+  25%{width: 23%;}
+  50% {width: 53%;}
+  100% {width: 70%;}
+}
+
 @media(max-width: 1400px) {
   .menu::before {
     width: 350px;
@@ -152,6 +159,8 @@
     right: 0;
     top: 0;
     z-index: 10;
+    animation-name: menuMobile;
+    animation-duration: .5s;
   }
   .menu-ativo span {
     display: inline-block;
