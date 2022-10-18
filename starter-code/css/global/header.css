@@ -71,10 +71,12 @@
 }
 
 @keyframes menuMobile {
-  0% {width: 0%;}
-  25%{width: 23%;}
-  50% {width: 53%;}
-  100% {width: 70%;}
+  from {
+    transform: translate3d(300px, 0, 0);
+  }
+  to {
+    transform: translate3d(0px, 0, 0);
+  }
 }
 
 @media(max-width: 1400px) {

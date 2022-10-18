@@ -22,12 +22,6 @@ function toggleMenu() {
       btnMobile.firstChild.setAttribute('src', './assets/shared/icon-hamburger.svg')
     }
   }
-  if(btnMobile.firstChild.getAttribute('src') == './assets/shared/icon-hamburger.svg' || 
-  btnMobile.firstChild.getAttribute('src') == '../assets/shared/icon-hamburger.svg') {
-    nav.style.transition = '0.5s ease';
-  }else {
-    nav.style.transition = 'none'
-  }
 };
 
 // Ativar Links do Menu
